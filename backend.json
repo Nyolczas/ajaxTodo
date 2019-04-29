@@ -1,0 +1,15 @@
+[
+    {
+        "id" : 1 ,
+        "feladat": "Megírni ezt az oldalt",
+        "importance": "Nagyon Fontos!",
+        "urgency": "Sürgős"
+    },
+    {
+        "id" : 2 ,
+        "feladat": "Letesztelni",
+        "importance": "Fontos",
+        "urgency": "ráér"
+    }
+
+]
