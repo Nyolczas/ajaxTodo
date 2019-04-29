@@ -5,10 +5,10 @@ $(function () {
     var $importance = $('#importance');
     var $urgency = $('#urgency');
 
-    function feladatHozzaadas(feladat) {
-        $feladatok.append('<li>Feladat: ' + feladat.feladat +
-                    ', jelentőség: ' + feladat.importance +
-                    ', státusz: ' + feladat.urgency + '</li>');
+    function feladatHozzaadas(teendo) {
+        $feladatok.append('<li>Feladat: ' + teendo.feladat +
+                    ', jelentőség: ' + teendo.importance +
+                    ', státusz: ' + teendo.urgency + '</li>');
     }
 
     $.ajax({
@@ -16,7 +16,7 @@ $(function () {
         url: 'backend.json',
         success: function (feladatok) {
             console.log('success', feladatok);
-            $.each(feladatok, function (i, teendo) {
+            $.each(feladatok, function (teendo) {
                 feladatHozzaadas(teendo);
             });
         },
@@ -30,7 +30,7 @@ $(function () {
         var teendo = {
             feladat: $feladat.val(),
             importance: $importance.val(),
-            urgency: $urgency.val()
+            urgency: $urgency.val(),
         };
 
         $.ajax({
