@@ -1,0 +1,15 @@
+{
+    "feladatok": [{
+            "id": 1,
+            "feladat": "Megírni ezt az oldalt",
+            "importance": "important",
+            "urgency": "have time"
+        },
+        {
+            "id": 2,
+            "feladat": "Letesztelni",
+            "importance": "important",
+            "urgency": "have time"
+        }
+    ]
+}

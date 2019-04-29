@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Feladatok</h1>
+
+    <ul id="feladatok">
+        <li>Feladat: Megírni ezt az oldalt, jelentőség: nagyon fontos, státusz: sürgős!</li>
+        <li>Feladat: Kipróbálni, jelentőség: fontos, státusz: ráér</li>
+    </ul>
+
+    <h3>Új Feladat</h3>
+    <p>Feladat: <input type="text" id="feladat">
+        <select name="importance" id="importance">
+            <option value="very-important">Nagyon fontos!</option>
+            <option value="important">Fontos</option>
+            <option value="non-important">Nem fontos</option>
+        </select>
+        <select name="urgency" id="urgency">
+            <option value="very-urgent">Nagyon sürgős!</option>
+            <option value="urgent">Sürgős</option>
+            <option value="have-time">Ráér</option>
+        </select>
+    </p>
+    <button id="add">Feladat hozzáadása</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/todo.js"></script>
+</body>
+
+</html>
