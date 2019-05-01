@@ -16,7 +16,7 @@ $(function () {
         url: 'backend.json',
         success: function (feladatok) {
             console.log('success', feladatok);
-            $.each(feladatok, function (teendo) {
+            $.each(feladatok, function (i, teendo) {
                 feladatHozzaadas(teendo);
             });
         },
